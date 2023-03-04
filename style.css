@@ -201,6 +201,6 @@ nav ul li a:hover::after{
     font-size: 15px
 }
 .services-list div:hover{
-    background-color: #ff8080;
+    background-color: #ff4e4e;
     transform: translateY(-10px);
 }
