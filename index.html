@@ -1,7 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutroNinja - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4dce76111d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Projects</a></li>
+                <li><a href="#">API</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Developer, player and <span class="auto-type"></span></p>
+            <h1>Hi, I'm <span>NINJA</span></h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <div id="services">
+                    <div class="container">
+                        <h1 class="sub-title">My Projects</h1>
+                        <div class="services-list">
+                            <div>
+                                <i class="fa-solid fa-question"></i>
+                                <h2>No Project :(</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mauris turpis, pulvinar ut facilisis porttitor, sollicitudin in augue.</p>
+                                <a href="#">Acess</a>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-question"></i>
+                                <h2>No Project :(</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mauris turpis, pulvinar ut facilisis porttitor, sollicitudin in augue.</p>
+                                <a href="#">Acess</a>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-question"></i>
+                                <h2>No Project :(</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mauris turpis, pulvinar ut facilisis porttitor, sollicitudin in augue..</p>
+                                <a href="#">Acess</a>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-question"></i>
+                                <h2>No Project :(</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mauris turpis, pulvinar ut facilisis porttitor, sollicitudin in augue.</p>
+                                <a href="#">Acess</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var typed = new Typed(".auto-type", {
+        strings: ["student", "discord server designer", "adorable",  "designer", "human", "discord bot designer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 2000,
+        loop: true
+    })
+
+</script>
+
 </body>
 </html>
