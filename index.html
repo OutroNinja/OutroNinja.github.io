@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4dce76111d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
 <div id="header">
@@ -77,8 +76,18 @@
     </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
+    var typed = new Typed(".auto-type", {
+        strings: ["student", "discord server designer", "adorable",  "designer", "human", "discord bot designer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 2000,
+        loop: true
+    })
+</script>
 
+<script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
     console.log(parseFloat(website))
@@ -94,15 +103,6 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
-
-    var typed = new Typed(".auto-type", {
-        strings: ["student", "discord server designer", "adorable",  "designer", "human", "discord bot designer"],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 2000,
-        loop: true
-    })
-
 </script>
 
 </body>
